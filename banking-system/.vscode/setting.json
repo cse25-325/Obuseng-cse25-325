@@ -1,0 +1,5 @@
+{
+  "java.debug.settings.vmArgs": "-Dglass.platform=Monocle -Dmonocle.platform=Headless -Dprism.order=sw",
+  "redhat.telemetry.enabled": true,
+  "git.autofetch": true
+}
