@@ -8,3 +8,4 @@
   "forwardPorts": [6080],
   "portsAttributes": { "6080": { "label": "Desktop (noVNC)", "onAutoForward": "openBrowser" } }
 }
+ 
