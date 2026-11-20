@@ -15,7 +15,7 @@ import bank.model.Role;
 import bank.util.PasswordHasher;
 
 /**
- * Top-level controller and composition root: builds the DAOs and the specialised controllers
+ *  controller and composition root: builds the DAOs and the specialised controllers
  * and wires them together. The GUI only ever talks to the controllers exposed here.
  */
 public class BankingController implements AutoCloseable {
