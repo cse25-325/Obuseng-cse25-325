@@ -13,8 +13,8 @@ import javafx.stage.Stage;
 /** JavaFX application: owns the window and switches between screens. */
 public class BankApp extends Application implements Navigator {
 
-    private static final String DB_URL = "jdbc:h2:./data/bankdb";
-
+    private static final String DB_URL = "jdbc:h2:" + System.getProperty("user.home").replace('\\', '/')
+        + "/bank-data/bankdb;AUTO_SERVER=TRUE";
     private Stage stage;
     private BankingController bank;
 
