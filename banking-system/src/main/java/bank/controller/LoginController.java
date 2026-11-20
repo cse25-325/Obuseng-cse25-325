@@ -39,8 +39,8 @@ public class LoginController {
         return new Session(record.getUsername(), Role.CUSTOMER, customer.getCustomerId(), customer.getFullName());
     }
 
-    /** Nothing is kept server-side; the caller simply drops the Session. */
+
     public void logout(Session session) {
-        // hook for audit logging in future
+        
     }
 }
