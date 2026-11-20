@@ -4,4 +4,6 @@ classpath:/home/codespace/.m2/repository/org/openjfx/javafx-graphics/21.0.2/java
 classpath:/home/codespace/.m2/repository/org/openjfx/javafx-graphics/21.0.2/javafx-graphics-21.0.2-linux.jar	4696341:1705439769000
 classpath:/home/codespace/.m2/repository/org/openjfx/javafx-base/21.0.2/javafx-base-21.0.2.jar	302:1705439743000
 classpath:/home/codespace/.m2/repository/org/openjfx/javafx-base/21.0.2/javafx-base-21.0.2-linux.jar	753975:1705439748000
+classpath:/home/codespace/.m2/repository/org/openjfx/javafx-fxml/21.0.2/javafx-fxml-21.0.2.jar	302:1705439759000
+classpath:/home/codespace/.m2/repository/org/openjfx/javafx-fxml/21.0.2/javafx-fxml-21.0.2-linux.jar	130176:1705439761000
 classpath:/home/codespace/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar	2614933:1695020346000
