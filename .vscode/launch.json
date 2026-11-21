@@ -8,19 +8,7 @@
             "name": "Bank Management System",
             "request": "launch",
             "mainClass": "bank.Main",
-            "projectName": "banking-system",
-<<<<<<< HEAD
-            "vmArgs": "--enable-native-access=ALL-UNNAMED"
-=======
-<<<<<<< HEAD
-            "vmArgs": "-Dglass.platform=Monocle -Dmonocle.platform=Headless -Dprism.order=sw"
-=======
-            "vmArgs": "-Dprism.order=sw"
->>>>>>> 949f80cfd4c39d4f62159d7c6d99ea0e85de5eff
->>>>>>> 0bf64b13fe012548842b38caa0ce21c12abf5a57
+            "projectName": "banking-system"
         }
-        
-            
-        
     ]
 }
