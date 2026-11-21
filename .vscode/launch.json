@@ -1,22 +1,17 @@
 
 
 {
-        "version": "0.2.0",
-        "configurations":[
-            {
-                "type": "java",
-                "name": "Main",
-                "request": "launch",
-                "mainClass": "bank.Main",
-                "projectName": "banking-system"
-            },
-            {
-                "type": "node-terminal",
-                "request": "launch",
-                "name": "Run Banking System",
-                "command": "DISPLAY=:1 mvn javafx:run"
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Run Banking System",
+            "request": "launch",
+            "mainClass": "bank.Main",
+            "projectName": "banking-system",
+            "env": {
+                "DISPLAY": ":1"
             }
-        ]
-
-           
+        }
+    ]
 }
