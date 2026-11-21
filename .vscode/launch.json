@@ -1,21 +1,18 @@
+
 {
-    
     "version": "0.2.0",
     "configurations": [
-        
         {
             "type": "java",
-            "name": "Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "Main",
+            "name": "Bank Management System",
             "request": "launch",
             "mainClass": "bank.Main",
             "projectName": "banking-system",
+<<<<<<< HEAD
             "vmArgs": "-Dglass.platform=Monocle -Dmonocle.platform=Headless -Dprism.order=sw"
+=======
+            "vmArgs": "-Dprism.order=sw"
+>>>>>>> 949f80cfd4c39d4f62159d7c6d99ea0e85de5eff
         }
         
             
