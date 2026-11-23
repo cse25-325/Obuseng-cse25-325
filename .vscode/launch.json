@@ -1,17 +1,14 @@
 
 
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "java",
-            "name": "Run Banking System",
-            "request": "launch",
-            "mainClass": "bank.Main",
-            "projectName": "banking-system",
-            "env": {
-                "DISPLAY": ":1"
-            }
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run Banking System",
+      "request": "launch",
+      "mainClass": "bank.Main",
+      "projectName": "banking-system"
+    }
+  ]
 }
