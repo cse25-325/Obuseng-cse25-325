@@ -17,7 +17,7 @@
     }
   },
 
-  "remoteEnv": {
+  "containerEnv": {
     "DISPLAY": ":1"
   },
 
@@ -29,7 +29,9 @@
     }
   },
 
-  "postStartCommand": "/usr/local/share/desktop-init.sh &",
+  "postCreateCommand": "mkdir -p /tmp/.X11-unix && chmod 1777 /tmp/.X11-unix",
+
+  "postStartCommand": "rm -f /tmp/.X1-lock && Xvfb :1 -screen 0 1280x800x24 -ac &",
 
   "customizations": {
     "vscode": {
