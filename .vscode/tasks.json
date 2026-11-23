@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Virtual Display",
+      "type": "shell",
+      "command": "Xvfb :1 -screen 0 1280x800x24 -ac & sleep 3",
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

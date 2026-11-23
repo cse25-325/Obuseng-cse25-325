@@ -7,7 +7,11 @@
       "name": "Run Banking System",
       "request": "launch",
       "mainClass": "bank.Main",
-      "projectName": "banking-system"
+      "projectName": "banking-system",
+      "env": {
+        "DISPLAY": ":1"
+      },
+      "preLaunchTask": "Start Virtual Display"
     }
   ]
 }
