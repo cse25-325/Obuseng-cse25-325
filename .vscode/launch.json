@@ -4,14 +4,11 @@
   "configurations": [
     {
       "type": "java",
-      "name": "Run Banking System",
+      "name": "Bank (cloud desktop)",
       "request": "launch",
       "mainClass": "bank.Main",
-      "projectName": "banking-system",
-      "env": {
-        "DISPLAY": ":1"
-      },
-      "preLaunchTask": "Start Virtual Display"
+      "preLaunchTask": "start-desktop",
+      "env": { "DISPLAY": ":1" }
     }
   ]
 }
