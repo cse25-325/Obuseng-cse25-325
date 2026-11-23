@@ -4,8 +4,8 @@
     {
       "label": "start-desktop",
       "type": "shell",
-      "command": "bash ${workspaceFolder}/banking-system/scripts/start-desktop.sh",
-      "presentation": { "reveal": "silent" },
+      "command": "if ! command -v Xvfb >/dev/null 2>&1; then sudo apt-get update && sudo apt-get install -y xvfb x11vnc fluxbox novnc websockify libgtk-3-0 libxtst6 libxxf86vm1 libgl1; fi; pgrep -x Xvfb >/dev/null || (rm -f /tmp/.X1-lock /tmp/.X11-unix/X1; nohup Xvfb :1 -screen 0 1280x800x24 -ac >/tmp/xvfb.log 2>&1 &); sleep 3; pgrep -x fluxbox >/dev/null || (DISPLAY=:1 nohup fluxbox >/tmp/fluxbox.log 2>&1 &); pgrep -x x11vnc >/dev/null || (nohup x11vnc -display :1 -forever -nopw -shared -rfbport 5900 >/tmp/x11vnc.log 2>&1 &); pgrep -f 'websockify.*6080' >/dev/null || (nohup websockify --web /usr/share/novnc 6080 localhost:5900 >/tmp/novnc.log 2>&1 &); sleep 1",
+      "presentation": { "reveal": "always" },
       "problemMatcher": []
     }
   ]
