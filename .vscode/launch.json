@@ -1,15 +1,13 @@
 
+
 {
-  "version": "0.2.0",
-  "configurations": [
-    
-    {
-      "type": "java",
-      "name": "Bank (cloud desktop)",
-      "request": "launch",
-      "mainClass": "bank.Main",
-      "preLaunchTask": "start-desktop",
-      "env": { "DISPLAY": ":1" }
-    }
-  ]
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node-terminal",
+            "name": "Run Banking System",
+            "request": "launch",
+            "command": "DISPLAY=:1 mvn javafx:run"
+        }
+    ]
 }
