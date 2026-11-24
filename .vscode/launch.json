@@ -8,8 +8,8 @@
             "request": "launch",
             "mainClass": "bank.Main",
             "projectName": "banking-system",
-            "vmArgs": "--enable-native-access=javafx.graphics",
-            "env": {
+           "vmArgs": "--enable-native-access=ALL-UNNAMED"
+           {
                 "DISPLAY": ":1"
             },
             "preLaunchTask": "Start JavaFX Desktop"
