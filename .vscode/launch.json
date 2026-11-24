@@ -8,12 +8,13 @@
             "request": "launch",
             "mainClass": "bank.Main",
             "projectName": "banking-system",
-           "vmArgs": "--enable-native-access=ALL-UNNAMED"
-           {
+            "vmArgs": "--enable-native-access=ALL-UNNAMED",
+            "env": {
                 "DISPLAY": ":1"
             },
             "preLaunchTask": "Start JavaFX Desktop"
         }
     ]
 }
+
 
