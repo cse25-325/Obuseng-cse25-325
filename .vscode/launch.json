@@ -5,7 +5,7 @@
     "configurations": [
         {
             "type": "node-terminal",
-            "name": "Run Banking System",
+            "name": "Run banking-System",
             "request": "launch",
             "command": "DISPLAY=:1 mvn org.openjfx:javafx-maven-plugin:0.0.8:run"
         }
