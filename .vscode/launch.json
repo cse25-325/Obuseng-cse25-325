@@ -1,13 +1,19 @@
 
-
 {
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "type": "node-terminal",
-      "request": "launch",
-      "name": "Run Banking System",
-      "command": "if ! pgrep -x Xvfb > /dev/null; then Xvfb :1 -screen 0 1280x800x24 >/tmp/xvfb.log 2>&1 & fi; until [ -S /tmp/.X11-unix/X1 ]; do sleep 1; done; cd banking-system && DISPLAY=:1 mvn org.openjfx:javafx-maven-plugin:0.0.8:run"
-    }
-  ]
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Run Banking System",
+            "request": "launch",
+            "mainClass": "bank.Main",
+            "projectName": "banking-system",
+            "vmArgs": "--enable-native-access=javafx.graphics",
+            "env": {
+                "DISPLAY": ":1"
+            },
+            "preLaunchTask": "Start JavaFX Desktop"
+        }
+    ]
 }
+
