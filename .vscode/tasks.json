@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "start-desktop",
+      "type": "shell",
+      "command": "pgrep -x Xvfb >/dev/null || (rm -f /tmp/.X1-lock /tmp/.X11-unix/X1; setsid nohup Xvfb :1 -screen 0 1280x800x24 -ac >/tmp/xvfb.log 2>&1 < /dev/null &); sleep 3; pgrep -x fluxbox >/dev/null || (DISPLAY=:1 setsid nohup fluxbox >/tmp/fluxbox.log 2>&1 < /dev/null &); pkill -x x11vnc; pkill -x websockify; sleep 1; (setsid nohup x11vnc -display :1 -forever -nopw -shared -rfbport 5900 >/tmp/x11vnc.log 2>&1 < /dev/null &); sleep 1; (setsid nohup websockify --web /usr/share/novnc 6080 localhost:5900 >/tmp/novnc.log 2>&1 < /dev/null &); sleep 2",
+      "presentation": { "reveal": "always" },
+      "problemMatcher": []
+    }
+  ]
+}
