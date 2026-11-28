@@ -12,7 +12,7 @@
             "env": {
                 "DISPLAY": ":1"
             },
-            "preLaunchTask": "Start JavaFX Desktop"
+            "preLaunchTask": "start-desktop"
         }
     ]
 }
